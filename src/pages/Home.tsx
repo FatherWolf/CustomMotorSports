@@ -11,10 +11,10 @@ import {
   useMediaQuery,
 } from '@mui/material';
 import {
-  Build as BuildIcon,
-  Palette as PaletteIcon,
-  DirectionsCar as CarIcon,
   Star as StarIcon,
+  Engineering as EngineeringIcon,
+  Construction as ConstructionIcon,
+  Restore as RestoreIcon,
 } from '@mui/icons-material';
 import { Link } from 'react-router-dom';
 
@@ -24,21 +24,21 @@ const Home: React.FC = () => {
 
   const services = [
     {
-      title: 'Body Work',
-      description: 'Professional collision repair, dent removal, and bodywork restoration for all vehicle types.',
-      icon: <BuildIcon sx={{ fontSize: 48, color: theme.palette.primary.main }} />,
+      title: 'Metal Fabrication & Custom Work',
+      description: 'Custom doors, chassis modification, metal work fabrication, and turning two cars into one unique build.',
+      icon: <ConstructionIcon sx={{ fontSize: 48, color: theme.palette.primary.main }} />,
       image: '/api/placeholder/400/250',
     },
     {
-      title: 'Custom Paint Jobs',
-      description: 'High-quality automotive painting services including custom colors, designs, and finishes.',
-      icon: <PaletteIcon sx={{ fontSize: 48, color: theme.palette.primary.main }} />,
+      title: 'Engine & Transmission Rebuilds',
+      description: 'Complete motor swaps, transmission rebuilds, and specializing in carbureted and classic engines.',
+      icon: <EngineeringIcon sx={{ fontSize: 48, color: theme.palette.primary.main }} />,
       image: '/api/placeholder/400/250',
     },
     {
-      title: 'Custom Projects',
-      description: 'Unique automotive modifications and custom builds tailored to your vision and specifications.',
-      icon: <CarIcon sx={{ fontSize: 48, color: theme.palette.primary.main }} />,
+      title: 'Complete Restorations',
+      description: 'Full vehicle restorations, upholstery work, wet sand and buff finishing - no basic maintenance or towing.',
+      icon: <RestoreIcon sx={{ fontSize: 48, color: theme.palette.primary.main }} />,
       image: '/api/placeholder/400/250',
     },
   ];
@@ -46,17 +46,17 @@ const Home: React.FC = () => {
   const testimonials = [
     {
       name: 'John Smith',
-      text: 'Amazing work on my classic Mustang restoration. The attention to detail was incredible!',
+      text: 'They completely rebuilt my 350 small block and did custom metal work on my 67 Camaro. Incredible fabrication skills!',
       rating: 5,
     },
     {
       name: 'Sarah Johnson',
-      text: 'Professional service and quality results. My car looks better than when it was new.',
+      text: 'The motor swap and custom transmission work exceeded my expectations. They know carbureted engines inside and out.',
       rating: 5,
     },
     {
       name: 'Mike Wilson',
-      text: 'Custom Motor Sports turned my vision into reality. Highly recommended!',
+      text: 'Custom Motor Sports turned two beat-up cars into one amazing ride. Their metal fabrication is top-notch!',
       rating: 5,
     },
   ];
@@ -86,14 +86,14 @@ const Home: React.FC = () => {
             gutterBottom
             sx={{ mb: 4, opacity: 0.9 }}
           >
-            Professional Auto Body Work, Custom Paint & Unique Projects
+            Specialized Custom Fabrication, Motor Swaps & Complete Restorations
           </Typography>
           <Typography
             variant="body1"
-            sx={{ mb: 4, maxWidth: 600, mx: 'auto', fontSize: '1.1rem' }}
+            sx={{ mb: 4, maxWidth: 700, mx: 'auto', fontSize: '1.1rem' }}
           >
-            Transform your vehicle with our expert craftsmanship. From collision repair to custom builds, 
-            we bring your automotive dreams to life with precision and passion.
+            Expert craftsmanship in metal fabrication, engine rebuilds, and complete vehicle transformations. 
+            We specialize in carbureted classics and one-off custom builds that bring your vision to life.
           </Typography>
           <Box sx={{ display: 'flex', gap: 2, justifyContent: 'center', flexWrap: 'wrap' }}>
             <Button

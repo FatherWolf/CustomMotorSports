@@ -16,8 +16,6 @@ import {
   Phone as PhoneIcon,
   DirectionsCar as ParkingIcon,
   Security as SecurityIcon,
-  Wifi as WifiIcon,
-  LocalCafe as CoffeeIcon,
   Accessible as AccessibleIcon,
 } from '@mui/icons-material';
 
@@ -37,28 +35,18 @@ const Location: React.FC = () => {
   const amenities = [
     {
       icon: <ParkingIcon />,
-      title: 'Free Parking',
-      description: 'Ample parking space for customer vehicles',
+      title: 'Vehicle Drop-Off',
+      description: 'Secure area for long-term project vehicles',
     },
     {
       icon: <SecurityIcon />,
-      title: 'Secure Facility',
-      description: '24/7 security monitoring and gated access',
-    },
-    {
-      icon: <WifiIcon />,
-      title: 'Free WiFi',
-      description: 'Complimentary internet access in waiting area',
-    },
-    {
-      icon: <CoffeeIcon />,
-      title: 'Customer Lounge',
-      description: 'Comfortable waiting area with refreshments',
+      title: '24/7 Security',
+      description: 'Continuous monitoring with on-site staff and cameras',
     },
     {
       icon: <AccessibleIcon />,
       title: 'Accessible',
-      description: 'Wheelchair accessible facilities',
+      description: 'Wheelchair accessible facilities and office area',
     },
   ];
 
@@ -82,7 +70,7 @@ const Location: React.FC = () => {
             Visit Our Shop
           </Typography>
           <Typography variant="h5" sx={{ opacity: 0.9 }}>
-            Professional automotive services in a state-of-the-art facility
+            Secure drop-off facility for custom fabrication and restoration projects
           </Typography>
         </Container>
       </Box>
@@ -173,7 +161,7 @@ const Location: React.FC = () => {
                 <Box sx={{ display: 'flex', alignItems: 'center', mb: 2 }}>
                   <ScheduleIcon sx={{ color: theme.palette.primary.main, mr: 1 }} />
                   <Typography variant="h6" sx={{ fontWeight: 'bold' }}>
-                    Business Hours
+                    Drop-Off Hours
                   </Typography>
                 </Box>
                 <List dense>
@@ -211,14 +199,11 @@ const Location: React.FC = () => {
                 <Typography variant="body1" sx={{ mb: 1 }}>
                   <strong>Phone:</strong> (555) 123-4567
                 </Typography>
-                <Typography variant="body1" sx={{ mb: 1 }}>
-                  <strong>Emergency:</strong> (555) 911-AUTO
-                </Typography>
                 <Typography variant="body1" sx={{ mb: 2 }}>
                   <strong>Email:</strong> info@custommotorsports.com
                 </Typography>
                 <Typography variant="body2" color="text.secondary">
-                  Call ahead to schedule an appointment or for emergency services.
+                  Call ahead to discuss your custom project and arrange vehicle drop-off.
                 </Typography>
               </CardContent>
             </Card>
@@ -226,12 +211,11 @@ const Location: React.FC = () => {
             <Card sx={{ p: 3, bgcolor: '#40434E' }}>
               <CardContent>
                 <Typography variant="h6" gutterBottom sx={{ fontWeight: 'bold', color: '#FFFFFA' }}>
-                  Directions & Parking
+                  Secure Vehicle Storage
                 </Typography>
                 <Typography variant="body2" sx={{ mb: 2, color: '#FFFFFA' }}>
-                  Free customer parking available on-site. 
-                  Main entrance is on Auto Shop Lane with additional 
-                  access from Motor Street.
+                  Your project vehicle will be stored in our secure facility with 
+                  24/7 monitoring and on-site staff presence for complete security.
                 </Typography>
                 <Typography variant="body2" sx={{ color: '#FFFFFA' }}>
                   <strong>From Downtown:</strong> Take Highway 101 North, 
@@ -246,14 +230,14 @@ const Location: React.FC = () => {
       <Box sx={{ bgcolor: '#912F40', color: '#FFFFFA', py: 6 }}>
         <Container maxWidth="lg" sx={{ textAlign: 'center' }}>
           <Typography variant="h4" component="h2" gutterBottom sx={{ fontWeight: 'bold' }}>
-            Can't Make It to Our Shop?
+            Specialized Custom Work
           </Typography>
           <Typography variant="body1" sx={{ mb: 3, fontSize: '1.1rem' }}>
-            We offer mobile consultation services for certain projects. 
-            Contact us to discuss bringing our expertise to your location.
+            We focus exclusively on custom fabrication, motor swaps, restorations, and unique builds. 
+            No oil changes, basic maintenance, or emergency towing - just expert craftsmanship.
           </Typography>
           <Typography variant="body2" sx={{ opacity: 0.9 }}>
-            Mobile services available within 25 miles of our main facility
+            Drop off your project and trust our specialists to bring your vision to life
           </Typography>
         </Container>
       </Box>

@@ -85,9 +85,9 @@ const Contact: React.FC = () => {
     },
     {
       icon: <ScheduleIcon sx={{ fontSize: 40, color: theme.palette.primary.main }} />,
-      title: 'Business Hours',
+      title: 'Drop-Off Hours',
       content: 'Mon-Fri: 8AM-6PM',
-      subtitle: 'Saturday: 9AM-4PM',
+      subtitle: 'Secure facility with 24/7 monitoring',
     },
   ];
 
@@ -111,7 +111,7 @@ const Contact: React.FC = () => {
             Contact Us
           </Typography>
           <Typography variant="h5" sx={{ opacity: 0.9 }}>
-            Get in touch for a free quote on your next project
+            Drop off your vehicle and let us transform it with expert craftsmanship
           </Typography>
         </Container>
       </Box>
@@ -172,11 +172,15 @@ const Contact: React.FC = () => {
                         onChange={handleSelectChange}
                         label="Service Needed"
                       >
-                        <MenuItem value="bodywork">Body Work & Collision Repair</MenuItem>
-                        <MenuItem value="paint">Custom Paint Job</MenuItem>
-                        <MenuItem value="custom">Custom Project</MenuItem>
-                        <MenuItem value="restoration">Vehicle Restoration</MenuItem>
-                        <MenuItem value="other">Other</MenuItem>
+                        <MenuItem value="motorswap">Motor Swaps</MenuItem>
+                        <MenuItem value="fabrication">Custom Metal Fabrication</MenuItem>
+                        <MenuItem value="doors">Custom Doors</MenuItem>
+                        <MenuItem value="chassis">Chassis Modification</MenuItem>
+                        <MenuItem value="restoration">Complete Restoration</MenuItem>
+                        <MenuItem value="transmission">Transmission Rebuild</MenuItem>
+                        <MenuItem value="upholstery">Upholstery Work</MenuItem>
+                        <MenuItem value="wetsand">Wet Sand & Buff</MenuItem>
+                        <MenuItem value="other">Other Custom Work</MenuItem>
                       </Select>
                     </FormControl>
                   </Box>
@@ -252,11 +256,11 @@ const Contact: React.FC = () => {
 
             <Box sx={{ mt: 4, p: 3, bgcolor: '#40434E', borderRadius: 2 }}>
               <Typography variant="h6" gutterBottom sx={{ fontWeight: 'bold', color: '#FFFFFA' }}>
-                Emergency Services
+                Secure Vehicle Drop-Off
               </Typography>
               <Typography variant="body2" sx={{ color: '#FFFFFA' }}>
-                For urgent collision repairs or emergency towing services, 
-                call our 24/7 hotline: <strong>(555) 911-AUTO</strong>
+                Your vehicle is safe with us. Our facility features 24/7 security cameras 
+                and staff on-site for complete peace of mind during your project.
               </Typography>
             </Box>
           </Box>

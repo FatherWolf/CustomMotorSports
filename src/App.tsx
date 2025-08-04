@@ -6,6 +6,7 @@ import Navbar from './components/Navbar';
 import Home from './pages/Home';
 import Contact from './pages/Contact';
 import Location from './pages/Location';
+import Projects from './pages/Projects';
 import './App.css';
 
 const theme = createTheme({
@@ -39,6 +40,7 @@ function App() {
           <Navbar />
           <Routes>
             <Route path="/" element={<Home />} />
+            <Route path="/projects" element={<Projects />} />
             <Route path="/contact" element={<Contact />} />
             <Route path="/location" element={<Location />} />
           </Routes>
